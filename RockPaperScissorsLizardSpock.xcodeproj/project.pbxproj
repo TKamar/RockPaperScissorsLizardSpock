@@ -14,6 +14,7 @@
 		C1EA01E32814190700B57620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EA01E12814190700B57620 /* LaunchScreen.storyboard */; };
 		C1EA01ED2814293500B57620 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA01EC2814293500B57620 /* GameView.swift */; };
 		C1EA01F128143EB400B57620 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA01F028143EB400B57620 /* HomePageView.swift */; };
+		C1EA01F328145CFF00B57620 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA01F228145CFF00B57620 /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C1EA01E42814190700B57620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EA01EC2814293500B57620 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		C1EA01F028143EB400B57620 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		C1EA01F228145CFF00B57620 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C1EA01DF2814190700B57620 /* Assets.xcassets */,
 				C1EA01E12814190700B57620 /* LaunchScreen.storyboard */,
 				C1EA01E42814190700B57620 /* Info.plist */,
+				C1EA01F228145CFF00B57620 /* PlayView.swift */,
 			);
 			path = RockPaperScissorsLizardSpock;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				C1EA01D72814190700B57620 /* AppDelegate.swift in Sources */,
 				C1EA01D92814190700B57620 /* SceneDelegate.swift in Sources */,
 				C1EA01ED2814293500B57620 /* GameView.swift in Sources */,
+				C1EA01F328145CFF00B57620 /* PlayView.swift in Sources */,
 				C1EA01F128143EB400B57620 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
