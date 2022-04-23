@@ -11,7 +11,7 @@
         <!--Game View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="GameView" id="BYZ-38-t0r" customClass="GameView" customModule="RockPaperScissorsLizardSpock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameView" id="BYZ-38-t0r" customClass="GameView" customModule="RockPaperScissorsLizardSpock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +77,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="CardPlayer1" destination="Zcs-Qt-PJR" id="V5Q-V5-kLh"/>
+                        <outlet property="CardPlayer2" destination="O5h-FF-NG2" id="dVz-uq-xdJ"/>
+                        <outlet property="ScorePlayer1" destination="cD1-oe-c2c" id="2rJ-Qh-KvD"/>
+                        <outlet property="ScorePlayer2" destination="PUC-5J-Zl8" id="QHX-Uw-di0"/>
+                        <outlet property="numOfRounds" destination="0eW-90-sPt" id="n37-qU-b4Z"/>
+                        <outlet property="winner" destination="zSX-AN-9QJ" id="eWz-Kf-lXV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +93,7 @@
         <!--View Controller-->
         <scene sceneID="Ymk-bz-13p">
             <objects>
-                <viewController id="sBu-AC-GUg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homePage" id="sBu-AC-GUg" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFh-is-TFG" customClass="homePage">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,13 +121,18 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnStartGame:" destination="zFh-is-TFG" eventType="touchUpInside" id="KdF-ex-FLT"/>
+                                    <action selector="btnStartGame:" destination="zFh-is-TFG" eventType="touchUpInside" id="p8n-tc-hb2"/>
+                                    <action selector="btnStartGame:" destination="sBu-AC-GUg" eventType="touchUpInside" id="xHG-18-dmA"/>
+                                    <action selector="bvbcvb:" destination="zFh-is-TFG" eventType="touchUpInside" id="Ae4-S2-V86"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2bb-RO-Qbu"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="AgS-33-QVv" id="4pW-pJ-Coi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2k-78-fwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
