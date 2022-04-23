@@ -1,5 +1,5 @@
 
-import SwiftUI
+import UIKit
 
 
 class HomePageView: UIViewController {
@@ -12,23 +12,13 @@ class HomePageView: UIViewController {
     }
 
     
-    @IBOutlet weak var btn: UIButton!
     
-    @IBAction func btnStartGame(_ sender: UIButton) {
-        
-            let vc = storyboard?.instantiateViewController(withIdentifier: "gameView") as! GameView
-            present(vc, animated: true)
-        
-            print("btn");
-        
+
+    @IBAction func btnStartGame(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "gameView") as! GameView
+        present(vc, animated: true)
     }
     
-    
-    
-//    let vc = storyboard?.instantiateViewController(withIdentifier: "gameView") as! GameView
-//    present(vc, animated: true)
-//
-//    print("btn");
 
     
     

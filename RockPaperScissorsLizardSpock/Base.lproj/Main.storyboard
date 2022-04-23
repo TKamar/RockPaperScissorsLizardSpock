@@ -8,92 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Game View-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="gameView" id="BYZ-38-t0r" customClass="GameView" customModule="RockPaperScissorsLizardSpock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="game roles" translatesAutoresizingMaskIntoConstraints="NO" id="qlk-gj-vAl">
-                                <rect key="frame" x="293" y="91" width="320" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fight!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gam-Ml-8di">
-                                <rect key="frame" x="400" y="12" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Player 1 name" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-dk-M7Z" userLabel="Player 1 Img">
-                                <rect key="frame" x="600" y="33" width="236" height="173"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="zfn-dk-M7Z" secondAttribute="height" multiplier="236:173" id="KVD-mn-eiW"/>
-                                </constraints>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player 2 name" translatesAutoresizingMaskIntoConstraints="NO" id="Evm-za-b5Q" userLabel="Player 2 Img">
-                                <rect key="frame" x="45" y="54" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winner:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSX-AN-9QJ">
-                                <rect key="frame" x="400" y="54" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Player 2: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-5J-Zl8" userLabel="Score Player 2">
-                                <rect key="frame" x="101" y="214" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number Of Rounds: 1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-90-sPt" userLabel="Number Of Rounds">
-                                <rect key="frame" x="356" y="372" width="185" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scissors" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-Qt-PJR" userLabel="Card Player 1">
-                                <rect key="frame" x="640" y="252" width="156" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="O5h-FF-NG2" userLabel="Card Player 2">
-                                <rect key="frame" x="96" y="252" width="138" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score Player 1: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD1-oe-c2c" userLabel="Score Player 1">
-                                <rect key="frame" x="655" y="214" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="CardPlayer1" destination="Zcs-Qt-PJR" id="V5Q-V5-kLh"/>
-                        <outlet property="CardPlayer2" destination="O5h-FF-NG2" id="dVz-uq-xdJ"/>
-                        <outlet property="ScorePlayer1" destination="cD1-oe-c2c" id="2rJ-Qh-KvD"/>
-                        <outlet property="ScorePlayer2" destination="PUC-5J-Zl8" id="QHX-Uw-di0"/>
-                        <outlet property="numOfRounds" destination="0eW-90-sPt" id="n37-qU-b4Z"/>
-                        <outlet property="winner" destination="zSX-AN-9QJ" id="eWz-Kf-lXV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-275.22321428571428" y="-149.27536231884059"/>
-        </scene>
-        <!--View Controller-->
+        <!--Home Page View-->
         <scene sceneID="Ymk-bz-13p">
             <objects>
-                <viewController storyboardIdentifier="homePage" id="sBu-AC-GUg" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homePage" id="sBu-AC-GUg" customClass="HomePageView" customModule="RockPaperScissorsLizardSpock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFh-is-TFG" customClass="homePage">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,22 +39,133 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnStartGame:" destination="zFh-is-TFG" eventType="touchUpInside" id="p8n-tc-hb2"/>
-                                    <action selector="btnStartGame:" destination="sBu-AC-GUg" eventType="touchUpInside" id="xHG-18-dmA"/>
-                                    <action selector="bvbcvb:" destination="zFh-is-TFG" eventType="touchUpInside" id="Ae4-S2-V86"/>
+                                    <action selector="btnStartGame:" destination="sBu-AC-GUg" eventType="touchUpInside" id="59v-Zr-jXz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2bb-RO-Qbu"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
-                    <connections>
-                        <outlet property="btn" destination="AgS-33-QVv" id="4pW-pJ-Coi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2k-78-fwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-263.16964285714283" y="-852.17391304347836"/>
+        </scene>
+        <!--Game View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="gameView" id="BYZ-38-t0r" customClass="GameView" customModule="RockPaperScissorsLizardSpock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fight!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gam-Ml-8di">
+                                <rect key="frame" x="408" y="9" width="100" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The winner is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSX-AN-9QJ">
+                                <rect key="frame" x="373" y="63.5" width="150" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="SOj-LB-5ym"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sop-KD-KIE">
+                                <rect key="frame" x="74" y="30" width="149" height="333"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player 2 name" translatesAutoresizingMaskIntoConstraints="NO" id="tBE-jM-Ice">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Player 2: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-5J-Zl8" userLabel="Score Player 2">
+                                        <rect key="frame" x="0.0" y="128" width="149" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="4dm-Kz-C3E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-gG-FcQ">
+                                        <rect key="frame" x="0.0" y="205" width="149" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PUC-5J-Zl8" firstAttribute="top" secondItem="tBE-jM-Ice" secondAttribute="bottom" id="1Cb-Qr-mB0"/>
+                                    <constraint firstItem="PUC-5J-Zl8" firstAttribute="centerY" secondItem="sop-KD-KIE" secondAttribute="centerY" id="72d-Fg-4zb"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ike-QZ-boD">
+                                <rect key="frame" x="673" y="30" width="149" height="354"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player 1 name" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-Sf-v3w">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="118"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Player 1: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD1-oe-c2c" userLabel="Score Player 1">
+                                        <rect key="frame" x="0.0" y="118" width="149" height="118"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-rw-AiB">
+                                        <rect key="frame" x="0.0" y="236" width="149" height="118"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cD1-oe-c2c" firstAttribute="top" secondItem="9dg-Sf-v3w" secondAttribute="bottom" id="rY8-E3-n8a"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number Of Rounds: 1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-90-sPt" userLabel="Number Of Rounds">
+                                <rect key="frame" x="364" y="291" width="188" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="game roles" translatesAutoresizingMaskIntoConstraints="NO" id="BRp-Co-Jsz">
+                                <rect key="frame" x="282" y="101" width="332" height="190"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Vu-IB-J2M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ike-QZ-boD" secondAttribute="trailing" constant="30" id="9hv-3H-G1z"/>
+                            <constraint firstItem="0eW-90-sPt" firstAttribute="top" secondItem="BRp-Co-Jsz" secondAttribute="bottom" constant="100" id="DJw-D0-33c"/>
+                            <constraint firstItem="zSX-AN-9QJ" firstAttribute="leading" secondItem="sop-KD-KIE" secondAttribute="trailing" constant="150" id="JdG-LI-FDy"/>
+                            <constraint firstItem="zSX-AN-9QJ" firstAttribute="top" secondItem="gam-Ml-8di" secondAttribute="bottom" constant="10" id="RBY-T3-6ti"/>
+                            <constraint firstItem="ike-QZ-boD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Rl4-0T-Lg1"/>
+                            <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="zSX-AN-9QJ" secondAttribute="trailing" constant="150" id="S7D-n8-QPG"/>
+                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="leading" secondItem="sop-KD-KIE" secondAttribute="trailing" constant="60" id="UP4-8l-17f"/>
+                            <constraint firstItem="gam-Ml-8di" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="XnR-nM-F0P"/>
+                            <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="0eW-90-sPt" secondAttribute="trailing" constant="20" id="aT9-87-obu"/>
+                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eDZ-Ne-geT"/>
+                            <constraint firstItem="sop-KD-KIE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gsa-Uf-0aD"/>
+                            <constraint firstItem="sop-KD-KIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mA4-ba-OHt"/>
+                            <constraint firstAttribute="bottom" secondItem="ike-QZ-boD" secondAttribute="bottom" constant="30" id="nCH-S8-Qc1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0eW-90-sPt" secondAttribute="bottom" constant="20" id="qnh-UA-cHi"/>
+                            <constraint firstItem="zSX-AN-9QJ" firstAttribute="centerX" secondItem="BRp-Co-Jsz" secondAttribute="centerX" id="rVP-g9-m5T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sop-KD-KIE" secondAttribute="bottom" constant="30" id="tpr-eh-wf0"/>
+                            <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="BRp-Co-Jsz" secondAttribute="trailing" constant="60" id="vfW-uK-xvo"/>
+                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="top" secondItem="zSX-AN-9QJ" secondAttribute="bottom" constant="51" id="wLc-GF-kih"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CardPlayer1" destination="jEn-rw-AiB" id="dpy-AR-dXB"/>
+                        <outlet property="CardPlayer2" destination="Vfd-gG-FcQ" id="8BG-ow-Rsd"/>
+                        <outlet property="Player1Img" destination="9dg-Sf-v3w" id="UrO-G9-AWv"/>
+                        <outlet property="Player2Img" destination="tBE-jM-Ice" id="Ktj-qU-U79"/>
+                        <outlet property="ScorePlayer1" destination="cD1-oe-c2c" id="jm9-iN-HAf"/>
+                        <outlet property="ScorePlayer2" destination="PUC-5J-Zl8" id="aEJ-jM-0Ti"/>
+                        <outlet property="gameRoleImg" destination="BRp-Co-Jsz" id="Ra4-U4-5HG"/>
+                        <outlet property="numOfRounds" destination="0eW-90-sPt" id="n37-qU-b4Z"/>
+                        <outlet property="winner" destination="zSX-AN-9QJ" id="eWz-Kf-lXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275.22321428571428" y="-149.27536231884059"/>
         </scene>
     </scenes>
     <resources>
@@ -145,11 +174,8 @@
         <image name="TBBT_logo.svg" width="2000" height="2472"/>
         <image name="ThisMeansWar(still)War" width="720" height="405"/>
         <image name="game roles" width="600" height="600"/>
-        <image name="scissors" width="512" height="512"/>
+        <image name="spock" width="512" height="512"/>
         <image name="stone" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
