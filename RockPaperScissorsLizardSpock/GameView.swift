@@ -115,7 +115,7 @@ class GameView: UIViewController {
         }
         
         ScorePlayer1.text = "Score Player 1: \(scorePlayer1)";
-        ScorePlayer2.text = "Score Player 1: \(scorePlayer2)";
+        ScorePlayer2.text = "Score Player 2: \(scorePlayer2)";
         
     }
 

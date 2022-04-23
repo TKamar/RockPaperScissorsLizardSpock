@@ -60,12 +60,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fight!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gam-Ml-8di">
-                                <rect key="frame" x="408" y="9" width="100" height="44.5"/>
+                                <rect key="frame" x="408" y="26.5" width="100" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The winner is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSX-AN-9QJ">
-                                <rect key="frame" x="373" y="63.5" width="150" height="26.5"/>
+                                <rect key="frame" x="373" y="81" width="150" height="26.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="SOj-LB-5ym"/>
                                 </constraints>
@@ -73,14 +73,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game roles" translatesAutoresizingMaskIntoConstraints="NO" id="BRp-Co-Jsz">
+                                <rect key="frame" x="283" y="112.5" width="330" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BRp-Co-Jsz" secondAttribute="height" multiplier="166:95" id="CTk-NR-y27"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sop-KD-KIE">
-                                <rect key="frame" x="74" y="30" width="149" height="333"/>
+                                <rect key="frame" x="74" y="30" width="149" height="343"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player 2 name" translatesAutoresizingMaskIntoConstraints="NO" id="tBE-jM-Ice">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="133"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Player 2: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-5J-Zl8" userLabel="Score Player 2">
-                                        <rect key="frame" x="0.0" y="128" width="149" height="77"/>
+                                        <rect key="frame" x="0.0" y="133" width="149" height="77"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="77" id="4dm-Kz-C3E"/>
                                         </constraints>
@@ -89,7 +95,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stone" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-gG-FcQ">
-                                        <rect key="frame" x="0.0" y="205" width="149" height="128"/>
+                                        <rect key="frame" x="0.0" y="210" width="149" height="133"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -98,57 +104,56 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ike-QZ-boD">
-                                <rect key="frame" x="673" y="30" width="149" height="354"/>
+                                <rect key="frame" x="673" y="30" width="149" height="344"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player 1 name" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-Sf-v3w">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="118"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="114.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score Player 1: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD1-oe-c2c" userLabel="Score Player 1">
-                                        <rect key="frame" x="0.0" y="118" width="149" height="118"/>
+                                        <rect key="frame" x="0.0" y="114.5" width="149" height="115"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-rw-AiB">
-                                        <rect key="frame" x="0.0" y="236" width="149" height="118"/>
+                                        <rect key="frame" x="0.0" y="229.5" width="149" height="114.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="cD1-oe-c2c" firstAttribute="top" secondItem="9dg-Sf-v3w" secondAttribute="bottom" id="rY8-E3-n8a"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number Of Rounds: 1/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-90-sPt" userLabel="Number Of Rounds">
-                                <rect key="frame" x="364" y="291" width="188" height="68"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Of Rounds: 1/15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-90-sPt" userLabel="Number Of Rounds">
+                                <rect key="frame" x="273" y="301.5" width="350" height="71.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="game roles" translatesAutoresizingMaskIntoConstraints="NO" id="BRp-Co-Jsz">
-                                <rect key="frame" x="282" y="101" width="332" height="190"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="BRp-Co-Jsz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Vu-IB-J2M"/>
+                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="top" secondItem="zSX-AN-9QJ" secondAttribute="bottom" constant="5" id="9Ow-wc-1Sg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ike-QZ-boD" secondAttribute="trailing" constant="30" id="9hv-3H-G1z"/>
                             <constraint firstItem="0eW-90-sPt" firstAttribute="top" secondItem="BRp-Co-Jsz" secondAttribute="bottom" constant="100" id="DJw-D0-33c"/>
+                            <constraint firstItem="0eW-90-sPt" firstAttribute="top" secondItem="BRp-Co-Jsz" secondAttribute="bottom" id="Jar-qP-cfP"/>
                             <constraint firstItem="zSX-AN-9QJ" firstAttribute="leading" secondItem="sop-KD-KIE" secondAttribute="trailing" constant="150" id="JdG-LI-FDy"/>
+                            <constraint firstItem="0eW-90-sPt" firstAttribute="leading" secondItem="sop-KD-KIE" secondAttribute="trailing" constant="50" id="PFr-Rf-U3m"/>
                             <constraint firstItem="zSX-AN-9QJ" firstAttribute="top" secondItem="gam-Ml-8di" secondAttribute="bottom" constant="10" id="RBY-T3-6ti"/>
                             <constraint firstItem="ike-QZ-boD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Rl4-0T-Lg1"/>
                             <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="zSX-AN-9QJ" secondAttribute="trailing" constant="150" id="S7D-n8-QPG"/>
                             <constraint firstItem="BRp-Co-Jsz" firstAttribute="leading" secondItem="sop-KD-KIE" secondAttribute="trailing" constant="60" id="UP4-8l-17f"/>
                             <constraint firstItem="gam-Ml-8di" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="XnR-nM-F0P"/>
-                            <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="0eW-90-sPt" secondAttribute="trailing" constant="20" id="aT9-87-obu"/>
+                            <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="0eW-90-sPt" secondAttribute="trailing" constant="50" id="aT9-87-obu"/>
                             <constraint firstItem="BRp-Co-Jsz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eDZ-Ne-geT"/>
                             <constraint firstItem="sop-KD-KIE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gsa-Uf-0aD"/>
                             <constraint firstItem="sop-KD-KIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mA4-ba-OHt"/>
-                            <constraint firstAttribute="bottom" secondItem="ike-QZ-boD" secondAttribute="bottom" constant="30" id="nCH-S8-Qc1"/>
+                            <constraint firstAttribute="bottom" secondItem="ike-QZ-boD" secondAttribute="bottom" constant="40" id="nCH-S8-Qc1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0eW-90-sPt" secondAttribute="bottom" constant="20" id="qnh-UA-cHi"/>
-                            <constraint firstItem="zSX-AN-9QJ" firstAttribute="centerX" secondItem="BRp-Co-Jsz" secondAttribute="centerX" id="rVP-g9-m5T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sop-KD-KIE" secondAttribute="bottom" constant="30" id="tpr-eh-wf0"/>
+                            <constraint firstItem="zSX-AN-9QJ" firstAttribute="centerX" secondItem="BRp-Co-Jsz" secondAttribute="centerX" constant="10" id="rVP-g9-m5T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sop-KD-KIE" secondAttribute="bottom" constant="20" id="tpr-eh-wf0"/>
                             <constraint firstItem="ike-QZ-boD" firstAttribute="leading" secondItem="BRp-Co-Jsz" secondAttribute="trailing" constant="60" id="vfW-uK-xvo"/>
-                            <constraint firstItem="BRp-Co-Jsz" firstAttribute="top" secondItem="zSX-AN-9QJ" secondAttribute="bottom" constant="51" id="wLc-GF-kih"/>
                         </constraints>
                     </view>
                     <connections>
